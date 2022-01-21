@@ -46,12 +46,6 @@ export default class TransactionScreen extends Component {
         domState: "normal",
         scanned: true
       });
-    } else if (domState === "studentId") {
-      this.setState({
-        studentId: data,
-        domState: "normal",
-        scanned: true
-      });
     }
   };
   render() {
@@ -83,20 +77,7 @@ export default class TransactionScreen extends Component {
                 <Text style={styles.scanbuttonText}>Scan</Text>
               </TouchableOpacity>
             </View>
-            <View style={[styles.textinputContainer, { marginTop: 25 }]}>
-              <TextInput
-                style={styles.textinput}
-                placeholder={"Student Id"}
-                placeholderTextColor={"#FFFFFF"}
-                value={studentId}
-              />
-              <TouchableOpacity
-                style={styles.scanbutton}
-                onPress={() => this.getCameraPermissions("studentId")}
-              >
-                <Text style={styles.scanbuttonText}>Scan</Text>
-              </TouchableOpacity>
-            </View>
+            
           </View>
       </View>
     );
