@@ -66,7 +66,7 @@ export default class TransactionScreen extends Component {
             <View style={styles.textinputContainer}>
               <TextInput
                 style={styles.textinput}
-                placeholder={"Book Id"}
+                placeholder={"Id del libro"}
                 placeholderTextColor={"#FFFFFF"}
                 value={bookId}
               />
